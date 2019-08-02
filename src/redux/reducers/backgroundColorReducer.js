@@ -1,10 +1,5 @@
 import { CHANGE_BACKGROUND_COLOR } from '../actions/types.js';
-
-
-function randomRgb() {
-    let rando = () => Math.floor(Math.random() * 255);
-    return `rgb(${rando()}, ${rando()}, ${rando()})`
-}
+import { randomRgb } from '../../helpers.js';
 
 let defaultState = {
     backgroundColor: randomRgb()
