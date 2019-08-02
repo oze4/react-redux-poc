@@ -9,9 +9,7 @@ let defaultState = {
 export default function backgroundColorReducer(state = defaultState, action) {
     switch(action.type) {
         case CHANGE_BACKGROUND_COLOR:
-            return { ...state,
-                backgroundColor: randomRgb()
-            }
+            return { ...state, backgroundColor: randomRgb() }
         default:
             return state;
     }
