@@ -1,4 +1,4 @@
-import { INCREMENT_COUNT, DECREMENT_COUNT, SET_COUNT } from '../actions/types.js';
+import { INCREMENT_COUNT, DECREMENT_COUNT, RESET_COUNT, SET_COUNT } from '../actions/types.js';
 
 let defaultState = {
     count: 0,
@@ -11,6 +11,8 @@ export default function countReducer(state = defaultState, action) {
             return { ...state, count: Number(state.count) + 1 }
         case DECREMENT_COUNT:
             return { ...state, count: Number(state.count) - 1 }
+        case RESET_COUNT:
+            return { ...state, count: 0 }
         case SET_COUNT:
             return { ...state, count: Number(action.payload) }
         default:

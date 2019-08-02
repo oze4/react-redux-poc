@@ -1,5 +1,6 @@
 import { 
-    incrementCount, decrementCount, changeBackgroundColor, setCount
+    incrementCount, decrementCount, changeBackgroundColor, setCount,
+    resetCount,
 } from '../actions';
 
 
@@ -10,6 +11,9 @@ export function mapCounterDispatchToProps(dispatch) {
         },
         onDecrementCount: () => {
             dispatch(decrementCount());
+        },
+        onResetCount: () => {
+            dispatch(resetCount());
         },
         onSetCount: (value) => {
             dispatch(setCount(value));

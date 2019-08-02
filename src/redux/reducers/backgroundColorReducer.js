@@ -1,6 +1,7 @@
 import { CHANGE_BACKGROUND_COLOR } from '../actions/types.js';
 import { randomRgb } from '../../helpers.js';
 
+
 let defaultState = {
     backgroundColor: randomRgb()
 }
