@@ -20,7 +20,7 @@ function AppCounter(props) {
             <h1>{props.title}</h1>
             <button onClick={props.onDecrementCount}>Decrement (-)</button>
             <button onClick={props.onIncrementCount}>Increment (+)</button>
-            <button onClick={""}>Reset Count</button>
+            <button onClick={props.onResetCount}>Reset Count</button>
             <div>
                 <button disabled={countValue ? false : true} onClick={handleSetCount}>Set Count</button>
                 <input value={countValue} onChange={handleSetCountInput} />
