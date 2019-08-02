@@ -1,7 +1,11 @@
-import withMapStateToProps from './withMapStateToProps.js';
-import withMapDispatchToProps from './withMapDispatchToProps'
+import withCounterState from './withCounterState';
+import withCounterDispatch from './withCounterDispatch';
+import withBackgroundColorState from './withBackgroundColorState.js';
+import withBackgroundColorDispatch from './withBackgroundColorDispatch.js';
 
 export {
-    withMapDispatchToProps,
-    withMapStateToProps
+    withCounterDispatch,
+    withCounterState,
+    withBackgroundColorDispatch,
+    withBackgroundColorState
 }

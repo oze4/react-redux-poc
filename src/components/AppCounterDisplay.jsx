@@ -1,9 +1,9 @@
 import React from 'react';
-import { withMapStateToProps } from '../redux/containers';
+import { withCounterState } from '../redux/containers';
 
 
 function AppCounterDisplay(props) {
     return <p>{props.count}</p>
 }
 
-export default withMapStateToProps(AppCounterDisplay);
+export default withCounterState(AppCounterDisplay);
